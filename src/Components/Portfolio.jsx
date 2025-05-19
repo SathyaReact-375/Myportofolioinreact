@@ -1,24 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Navbar, Nav, Form, Button, Row, Col } from "react-bootstrap";
-import { FaCode } from "react-icons/fa";
-import gsap from "gsap";
 import "../App.css";
 import img from "../assets/images/20220501_083642-ai-brush-removebg-asqg9mdd.png";
-
-function Logo() {
-  useEffect(() => {
-    gsap.fromTo(".logo-text", { opacity: 0, x: -50 }, { opacity: 1, x: 0, duration: 1.5, ease: "power3.out" });
-    gsap.fromTo(".logo-icon", { rotate: 0 }, { rotate: 360, duration: 1.5, repeat: -1, ease: "linear" });
-  }, []);
-
-  return (
-    <div className="logo d-flex align-items-center">
-      <FaCode className="logo-icon text-warning fs-1 me-2" />
-      <h1 className="logo-text text-warning mb-0">Sathya</h1>
-    </div>
-  );
-}
 
 function Portfolio() {
   return (
@@ -26,7 +10,9 @@ function Portfolio() {
       <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="px-4">
         <Container fluid>
           <Navbar.Brand href="#home">
-            <Logo />
+            <div className="logo d-flex align-items-center">
+              <span className="animated-s">Sathya</span>
+            </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">

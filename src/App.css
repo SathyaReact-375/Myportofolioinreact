@@ -1,10 +1,6 @@
-span {
+.animated-s {
+  font-size: 32px;
+  color: #ffc107;
+  animation:  2s linear infinite;
   display: inline-block;
-  animation: colorWave 2s infinite;
-}
-@keyframes colorWave {
-  0%, 100% { color: orange; }
-  35% { color: green; }
-  50% { color: blue; }
-  75% { color: yellow; }
 }
