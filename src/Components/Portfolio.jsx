@@ -2,10 +2,10 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Navbar, Nav, NavDropdown, Form, Button, Row, Col } from 'react-bootstrap';
 import '../App.css'
+import img from '../assets/images/20220501_083642-ai-brush-removebg-asqg9mdd.png'
 function Portfolio() {
   return (
     <>
-     
       <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="px-4">
         <Container fluid>
           <Navbar.Brand href="#home" className="fs-1 text-warning">Sathya</Navbar.Brand>
@@ -33,7 +33,7 @@ function Portfolio() {
             <Button variant="dark">Hire Me</Button>
           </div>
           <div className="text-center ms-5">
-            <img src="../src/assets/images/20220501_083642-ai-brush-removebg-asqg9mdd.png" alt="Sathya" className="img-fluid" style={{ maxHeight: '500px' }} />
+            <img src={img} alt="Sathya" className="img-fluid" style={{ maxHeight: '500px' }} />
           </div>
         </Container>
       </section>
