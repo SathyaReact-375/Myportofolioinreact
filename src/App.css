@@ -1,0 +1,10 @@
+span {
+  display: inline-block;
+  animation: colorWave 2s infinite;
+}
+@keyframes colorWave {
+  0%, 100% { color: orange; }
+  35% { color: green; }
+  50% { color: blue; }
+  75% { color: yellow; }
+}
