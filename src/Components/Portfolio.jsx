@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Navbar, Nav, Form, Button, Row, Col } from "react-bootstrap";
 import "../App.css";
-import img from "../assets/images/20220501_083642-ai-brush-removebg-asqg9mdd.png";
+import img from "../assets/images/portfolio_profile.png";
 
 function Portfolio() {
   return (
@@ -72,6 +72,72 @@ function Portfolio() {
           </Row>
         </Container>
       </section>
+      <section id="project" className="py-5 bg-dark text-white">
+  <Container>
+    <h2 className="text-center mb-5">My <span className="text-warning">Projects</span></h2>
+    <Row className="gy-4">
+      <Col md={4}>
+        <div className="p-4 border rounded bg-light text-dark h-100 shadow text-center">
+          <h5 className="text-warning">CozyHome - Interior Design</h5>
+          <p>A simple and elegant interior design landing page using HTML, CSS, and JavaScript.</p>
+          <a
+            href="https://sathya-735.github.io/cozyhome/index.html"
+            className="btn btn-dark mt-3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Demo
+          </a>
+        </div>
+      </Col>
+
+      <Col md={4}>
+        <div className="p-4 border rounded bg-light text-dark h-100 shadow text-center">
+          <h5 className="text-warning">Zara Cars</h5>
+          <p>A car rental website built using React, Bootstrap, and routing with responsive design.</p>
+          <a
+            href="https://zara-theta-ten.vercel.app/"
+            className="btn btn-dark mt-3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Demo
+          </a>
+        </div>
+      </Col>
+
+      <Col md={4}>
+        <div className="p-4 border rounded bg-light text-dark h-100 shadow text-center">
+          <h5 className="text-warning">Fertix - Agri Ecommerce</h5>
+          <p>A complete frontend e-commerce app for agriculture products with cart, wishlist, and checkout functionality.</p>
+          <a
+            href="https://fertix-git-main-sathyas-projects-9d486476.vercel.app/"
+            className="btn btn-dark mt-3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Demo
+          </a>
+        </div>
+      </Col>
+    </Row>
+  </Container>
+</section>
+      <section id="contact" className="py-5 bg-light">
+  <Container>
+    <h2 className="text-center text-dark mb-4">Contact <span className="text-warning">Me</span></h2>
+    
+    <div className="mx-auto mb-4 p-4 border rounded bg-white shadow" style={{ maxWidth: "600px" }}>
+      <h5 className="text-warning mb-3">My Contact Details</h5>
+      <p><strong>Email:</strong> sathyasiva735@gmail.com</p>
+      <p><strong>Phone:</strong> +91 88383 09023</p>
+      <p><strong>Address:</strong> 43/3C Mettu Street, Tirunelveli Town, Tirunelveli, Pincode: 627006</p>
+    </div>
+
+    
+  </Container>
+</section>
+
 
       <section id="contact" className="py-5 bg-light">
         <Container>
@@ -88,17 +154,27 @@ function Portfolio() {
       </section>
 
       <footer className="bg-dark text-white py-4">
-        <Container className="text-center">
-          <p>Connect with me on social media</p>
-          <div className="d-flex justify-content-center gap-3 fs-4 text-warning">
-            <i className="fab fa-facebook"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-github"></i>
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-linkedin"></i>
-          </div>
-        </Container>
-      </footer>
+  <Container className="text-center">
+    <p>Connect with me on social media</p>
+    <div className="d-flex justify-content-center gap-3 fs-4 text-warning">
+      <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-warning">
+        <i className="fab fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-warning">
+        <i className="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/SathyaReact-375" target="_blank" rel="noopener noreferrer" className="text-warning">
+        <i className="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/her_king_sathya?igsh=MTZnamV1c20wNnAyeQ==" target="_blank" rel="noopener noreferrer" className="text-warning">
+        <i className="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-warning">
+        <i className="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </Container>
+</footer>
     </>
   );
 }
